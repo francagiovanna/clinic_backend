@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Endpoints Usuario",
+  "steps": [
+    {
+      "file": "src/index.ts",
+      "description": "Endpoints usuario, onde tudo começa",
+      "line": 12
+    }
+  ],
+  "ref": "db0129f0794bc976e8697f4fb7b37d73e058bf1a"
+}
