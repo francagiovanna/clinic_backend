@@ -1,3 +1,7 @@
-import { PrismaClient } from "./generated/prisma/client.ts";
+import { PrismaClient } from "./generated/prisma/client";
+import { PrismaPg } from "@prisma/adapter-pg";
 
-export const prisma = new PrismaClient({ accelerateUrl: '', log: ['query'] });
+const connectionString = `postgresql://postgres:senai@localhost:5432/clinic?schema=public`;
+
+const adapter = new PrismaPg({ connectionString });
+export const prisma = new PrismaClient({ adapter, log: ['query'] });
